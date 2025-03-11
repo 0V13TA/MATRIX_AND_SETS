@@ -1,0 +1,13 @@
+{
+  "name": "matrix_and_sets",
+  "version": "1.0.0",
+  "description": "A project I made that is based on matrices and sets",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "ovieta",
+  "license": "ISC",
+  "type": "commonjs"
+}
