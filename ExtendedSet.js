@@ -2,7 +2,7 @@
  * Class representing an extended Set with additional functionality.
  * @extends Set
  */
-class ExtendedSet extends Set {
+export class ExtendedSet extends Set {
   /**
    * Create an ExtendedSet.
    * @param {Iterable} [iterable] - An optional iterable to initialize the set.

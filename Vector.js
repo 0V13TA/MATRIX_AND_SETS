@@ -1,7 +1,7 @@
 /**
  * Class representing a Vector.
  */
-class Vector {
+export class Vector {
   /**
    * Create a Vector.
    * @param {number[]} array - The array representing the vector.

@@ -9,5 +9,8 @@
   "keywords": [],
   "author": "ovieta",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "vitest": "^3.0.8"
+  }
 }

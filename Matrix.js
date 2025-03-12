@@ -1,7 +1,7 @@
 /**
  * Class representing a Matrix
  */
-class Matrix {
+export class Matrix {
   /**
    * Create a Matrix
    * @param {number[][]} array
