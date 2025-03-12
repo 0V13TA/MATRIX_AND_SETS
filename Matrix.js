@@ -299,6 +299,35 @@ export class Matrix {
   }
 
   /**
+   * Perform element wise multiplication on this matrix.
+   * @param {Matrix} matrix - The matrix to perform element wise multiplication.
+   * @returns {Matrix} The resulting matrix after performing the element wise multiplication (Hadamard Product).
+   * @throws Will throw an error if the input is not a Matrix instance or if the matrices are not conformal.
+   */
+  performHadamardMultiplicationOn(matrix) {
+    if (!(matrix instanceof Matrix))
+      throw new Error("Value Must be of type Matrix");
+
+    if (!this.isConformalTo(matrix))
+      throw new Error("Matrices must be conformal");
+    /**
+     * @type {number[][]}
+     */
+    const newArr = [];
+
+    const [row, col] = this.getDimensions();
+
+    for (let i = 0; i < row; i++) {
+      newArr.push([]);
+
+      for (let j = 0; j < col; j++) {
+        newArr[i].push(this.arr[i][j] * matrix.arr[i][j]);
+      }
+    }
+    return new Matrix(newArr);
+  }
+
+  /**
    * Multiply this matrix by another matrix.
    * @param {Matrix} matrix - The matrix to multiply by.
    * @returns {Matrix} The resulting matrix after multiplication.

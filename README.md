@@ -212,6 +212,15 @@ getAdjoint();
 - **Returns**: A new `Matrix` instance representing the adjugate (also known as the classical adjugate)
 - **Throws**: An error if the matrix is not square.
 
+#### `performHadamardMultiplicationOn()`
+
+```javascript
+performHadamardMultiplicationOn();
+```
+
+- **Returns**: A new `Matrix` instance representing the hadamard product (also known as the element wise multiplication)
+- **Throws**: An error if the matrix is not square.
+
 ---
 
 ## ExtendedSet Class
