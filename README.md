@@ -203,6 +203,15 @@ getInverse();
 - **Returns**: A new `Matrix` instance representing the inverse of the matrix.
 - **Throws**: An error if the matrix is not square or if it is singular.
 
+#### `getAdjoint()`
+
+```javascript
+getAdjoint();
+```
+
+- **Returns**: A new `Matrix` instance representing the adjugate (also known as the classical adjugate)
+- **Throws**: An error if the matrix is not square.
+
 ---
 
 ## ExtendedSet Class
